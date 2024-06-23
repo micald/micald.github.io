@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="icon" type="image/png" href="imagenes/logo2.ico" sizes="16x16">
+    <link rel="icon" type="image/png" href="imagenes/logo2.ico" sizes="32x32">
+    <link rel="icon" type="image/png" href="imagenes/logo2.ico" sizes="64x64">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/0fba305f36.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="Css/styles.css">
+    <script src="Js/validacion.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <section id="Inicio">
+                <h2><a href="index.html"> Inicio</a></h2>
+            </section>
+            <section id="productos">
+                <li>
+                    <h2><a href="index.html">Productos</a></h2>
+                    <ul class="desplegable">
+                        <li><a href="gorrastrucker.html">Gorras trucker</a></li>
+                        <li><a href="gorrosdelana.html">Gorros de lana</a></li>
+                        <li><a href="parchesbordados.html">Parches bordados</a></li>
+                    </ul>
+                </li>
+            </section>
+            <section id="quienes-somos">
+                <h2><a href="Quienes-Somos.html"> Quiénes somos</a></h2>
+            </section>
+            <section id="contacto">
+                <h2><a href="contacto.html">Contacto</a></h2>
+            </section>
+        </nav>
+        <div>
+            <h1 class="animate__animated animate__bounce">Gallo de Agua</h1>
+            <div class="logo">
+                <img class="animate__animated animate__bounce" src="imagenes/logo2.png" alt="logogallo" width="200px"
+                    height="200px">
+            </div>
+            <h4 class="animate__animated animate__bounce">Accesorios de indumentaria</h4>
+        </div>
+    </header>
+
+    <section id="contacto">
+        <div class="container-md ">
+            <center>
+                <p>Dejanos tu consulta o sugerencias. Te responderemos a la brevedad</p>
+            </center>
+
+            <div class="formulario d-flex justify-content-center">
+                <form class="col-6" id="miFormulario" onsubmit="return validarFormulario(event)"
+                    action="https://formspree.io/f/mrgvwngw" method="POST"> <!-- API para enviar formulario al mail -->
+
+                    <label for="nombre">APELLIDO Y NOMBRE:</label><br>
+                    <input type="text" id="nombre" name="nombre"><br>
+
+                    <label for="telefono">TELEFONO:</label><br>
+                    <input type="text" id="telefono" name="telefono" placeholder="(XX) XXX XXX"><br>
+
+                    <label for="email">E-MAIL:</label><br>
+                    <input type="email" id="email" name="email" placeholder="email@dominio.com"><br>
+
+                    <label id="consulta">CONSULTA:</label><br>
+                    <input type="text" class="sugerencias" name="sugerencias" id="sugerencias"><br>
+
+                    <button id="my-form-button">Enviar</button>
+                    <p id="my-form-status"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="redes">
+            <a href="https://www.facebook.com/" class="social-icon" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/" class="social-icon" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" class="social-icon" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+        <p class="copyright">© 2023 Gallo de Agua. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
